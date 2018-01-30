@@ -8,10 +8,10 @@
 # Description (TL;DR)
 ### This project is meant to allow you to quickly jumpstart your project, using the core principle of Vue and Atomic Design, to allow for an easily maintainable codebase and quick development time.
 
-### It attempts to follow the idea behind [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) (A methodology of organizing pages), while using some separate strategies learned through experience. This project should remain stable enough for daily use, and any changes should be easily integrated with any existing project. After all, I will also be using this for my own projects.
+It attempts to follow the idea behind [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) (A methodology of organizing pages), while using some separate strategies learned through experience. This project should remain stable enough for daily use, and any changes should be easily integrated with any existing project. After all, I will also be using this for my own projects.
 
 # Description Full
-### The general structure of this project is heavily based on Atomic Design, but there are several instances of divergence. I will not go into the specifics, but will highlight parts that may not be intuitive at first glance.
+The general structure of this project is heavily based on Atomic Design, but there are several instances of divergence. I will not go into the specifics, but will highlight parts that may not be intuitive at first glance.
 
 * Atomic design is used within the css and components folder. Inside are the folder: Atoms, Molecules, Organisms, Templates. Inside of any of these folders, you can create a sub-folder for specific sections of the page. You can nest as many folders as you like, but anything beyond 4 levels should be avoided, since such nesting should be made more horizontal, rather than vertical. An example of a structure can be `Templates/ > layout/ > header.vue`
 
