@@ -6,7 +6,7 @@
 5. You're good to go!
 
 # Description (TL;DR)
-### This project is meant to allow you to quickly jumpstart your project, using the core principle of Vue and Atomic Design, to allow for an easily maintainable codebase and quick development time.
+This project is meant to allow you to quickly jumpstart your project, using the core principle of Vue and Atomic Design, to allow for an easily maintainable codebase and quick development time.
 
 It attempts to follow the idea behind [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) (A methodology of organizing pages), while using some separate strategies learned through experience. This project should remain stable enough for daily use, and any changes should be easily integrated with any existing project. After all, I will also be using this for my own projects.
 
