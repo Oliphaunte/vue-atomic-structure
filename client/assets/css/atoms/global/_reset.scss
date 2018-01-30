@@ -1,0 +1,73 @@
+html, body, main, footer, header, nav, hr, ul, li, a, h1, h2, h3, h4, h5, h6,
+p, pre, input, button, form, select, option {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  text-transform: none;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+header, nav {
+  width: 100%;
+}
+
+ul, li, a, h1, h2, h3, h4, h5, h6, p, pre {
+  font-weight: normal;
+  list-style: none;
+  text-transform: none;
+  text-decoration: none;
+
+  &:hover {
+    text-transform: none;
+    text-decoration: none;
+  }
+}
+
+input, button, form, select, textarea {
+  border: 0;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input:not([type='checkbox']):not([type='radio']),
+button, form, select, textarea {
+  appearance: none;
+  border-radius: 0;
+  transform: translateZ(0px);
+  -webkit-transform: translateZ(0px);
+}
+
+// Remove scrollbar for Chrome & Opera
+// Auto-hide scrollbar for IE
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  ::-webkit-scrollbar {
+      display: none;
+  }
+}
+
+// Hide disabled options in select elements
+select option[disabled] {
+  display: none;
+}
+
+::placeholder {
+  color: inherit;
+}

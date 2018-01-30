@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  flex-basis: 100%;
+  height: $header_height_mobile;
+
+  > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    max-width: 100px;
+  }
+
+  nav {
+    display: flex;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      
+      border: 2px solid rgba($general_black, 0.8);
+    }
+  }
+
+  @include breakpoint($mobile) {
+
+  }
+
+  @include breakpoint($tablet) {
+    height: $header_height_tablet;
+  }
+
+  @include breakpoint($tablet_landscape) {
+    
+  }
+
+  @include breakpoint($desktop) {
+    
+  }
+}

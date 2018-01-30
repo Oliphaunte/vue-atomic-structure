@@ -1,0 +1,33 @@
+body {
+  #app {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100%;
+    width: 100%;
+  }
+
+  @include breakpoint($mobile) {
+    #app {
+
+    }
+  }
+
+  @include breakpoint($tablet) {
+    #app {
+
+    }
+  }
+
+  @include breakpoint($tablet_landscape) {
+    #app {
+
+    }
+  }
+
+  @include breakpoint($desktop) {
+    #app {
+
+    }
+  }
+}

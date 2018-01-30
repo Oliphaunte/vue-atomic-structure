@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+
+  height: $footer_height_mobile;
+  border-top: 2px solid rgba($general_black, 0.8);
+
+  @include breakpoint($mobile) {
+
+  }
+
+  @include breakpoint($tablet) {
+    height: $footer_height_tablet;
+  }
+
+  @include breakpoint($tablet_landscape) {
+    
+  }
+
+  @include breakpoint($desktop) {
+    
+  }
+}

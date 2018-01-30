@@ -1,0 +1,25 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  
+  height: calc(100% - #{$footer_height_mobile} - #{$header_height_mobile});
+
+  @include breakpoint($mobile) {
+
+  }
+
+  @include breakpoint($tablet) {
+    height: calc(100% - #{$footer_height_tablet} - #{$header_height_tablet});
+  }
+
+  @include breakpoint($tablet_landscape) {
+    
+  }
+
+  @include breakpoint($desktop) {
+    
+  }
+}

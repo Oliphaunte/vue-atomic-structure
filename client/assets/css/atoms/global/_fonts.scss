@@ -1,0 +1,31 @@
+body, *:after, *:before {
+  // Higher quality rendering -- impacts performance
+  text-rendering: optimizeLegibility !important;
+  // Chrome & Opera
+	-webkit-font-smoothing: antialiased;
+  // Firefox on OSX
+	-moz-osx-font-smoothing: grayscale;
+
+  // IE -- Causes problems on safari for text heavy pages, use with precaution
+  // -webkit-text-shadow: rgba(255,255,255,0.01) 0 0 1px !important;
+  // -webkit-text-stroke: rgba(255,255,255,0.01) 0.1px !important;
+  // -webkit-text-stroke-width: 0.1px !important;
+
+  font-size: 100%;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src:  font-url('@/client/assets/static/fonts/museo.eot') format('eot');
+  src:  font-url('@/client/assets/static/fonts/museo.eot?#iefix') format('embedded-opentype'),
+        font-url('@/client/assets/static/fonts/museo.ttf') format('truetype'),
+        font-url('@/client/assets/static/fonts/museo.woff') format('woff'),
+        font-url('@/client/assets/static/fonts/museo.svg') format('svg');
+  font-display: swap;
+}
+
+ul, li, a, h1, h2, h3, h4, h5, h6, p, pre, button, label, input, a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba( $general_black, 1);
+}
